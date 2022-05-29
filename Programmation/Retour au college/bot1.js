@@ -9,5 +9,6 @@ client.on('PRIVMSG',function(data){
     const number = Math.sqrt(myArray[0])*myArray[1]
     const resp = "!ep1 -rep "+number.toFixed(2)
     client.say(data.sender, resp)
+    console.log(data.message)
 })
 client.connect()
